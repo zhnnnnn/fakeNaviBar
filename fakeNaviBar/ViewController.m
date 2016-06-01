@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "secondVC.h"
+#import "UIViewController+fakeNaviBar.h"
 
 @interface ViewController ()
 
@@ -16,12 +18,19 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    self.navigationController.navigationBar.barTintColor = [UIColor greenColor];
+    self.title = @"eeadadadadadadaadada";
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)pushVC:(id)sender {
+    
+    secondVC * sVC = [[secondVC alloc]init];
+    [self.navigationController pushViewController:sVC animated:YES];
 }
 
 @end

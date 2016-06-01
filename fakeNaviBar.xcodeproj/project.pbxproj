@@ -15,6 +15,9 @@
 		CDD076661CFE8ADA0055C94B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD076641CFE8ADA0055C94B /* LaunchScreen.storyboard */; };
 		CDD076711CFE8ADA0055C94B /* fakeNaviBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD076701CFE8ADA0055C94B /* fakeNaviBarTests.m */; };
 		CDD0767C1CFE8ADA0055C94B /* fakeNaviBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0767B1CFE8ADA0055C94B /* fakeNaviBarUITests.m */; };
+		CDD0768E1CFE8EFE0055C94B /* fakeNaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD0768D1CFE8EFE0055C94B /* fakeNaviBar.m */; };
+		CDD076911CFE983C0055C94B /* UIViewController+fakeNaviBar.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD076901CFE983C0055C94B /* UIViewController+fakeNaviBar.m */; };
+		CDD076941CFE9AD30055C94B /* secondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD076931CFE9AD30055C94B /* secondVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,12 @@
 		CDD076771CFE8ADA0055C94B /* fakeNaviBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fakeNaviBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CDD0767B1CFE8ADA0055C94B /* fakeNaviBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = fakeNaviBarUITests.m; sourceTree = "<group>"; };
 		CDD0767D1CFE8ADA0055C94B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CDD0768C1CFE8EFE0055C94B /* fakeNaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fakeNaviBar.h; sourceTree = "<group>"; };
+		CDD0768D1CFE8EFE0055C94B /* fakeNaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = fakeNaviBar.m; sourceTree = "<group>"; };
+		CDD0768F1CFE983C0055C94B /* UIViewController+fakeNaviBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+fakeNaviBar.h"; sourceTree = "<group>"; };
+		CDD076901CFE983C0055C94B /* UIViewController+fakeNaviBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+fakeNaviBar.m"; sourceTree = "<group>"; };
+		CDD076921CFE9AD30055C94B /* secondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = secondVC.h; sourceTree = "<group>"; };
+		CDD076931CFE9AD30055C94B /* secondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = secondVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +114,9 @@
 				CDD0765A1CFE8ADA0055C94B /* AppDelegate.m */,
 				CDD0765C1CFE8ADA0055C94B /* ViewController.h */,
 				CDD0765D1CFE8ADA0055C94B /* ViewController.m */,
+				CDD076921CFE9AD30055C94B /* secondVC.h */,
+				CDD076931CFE9AD30055C94B /* secondVC.m */,
+				CDD076951CFEC46C0055C94B /* fakeNavibar */,
 				CDD0765F1CFE8ADA0055C94B /* Main.storyboard */,
 				CDD076621CFE8ADA0055C94B /* Assets.xcassets */,
 				CDD076641CFE8ADA0055C94B /* LaunchScreen.storyboard */,
@@ -138,6 +150,17 @@
 				CDD0767D1CFE8ADA0055C94B /* Info.plist */,
 			);
 			path = fakeNaviBarUITests;
+			sourceTree = "<group>";
+		};
+		CDD076951CFEC46C0055C94B /* fakeNavibar */ = {
+			isa = PBXGroup;
+			children = (
+				CDD0768C1CFE8EFE0055C94B /* fakeNaviBar.h */,
+				CDD0768D1CFE8EFE0055C94B /* fakeNaviBar.m */,
+				CDD0768F1CFE983C0055C94B /* UIViewController+fakeNaviBar.h */,
+				CDD076901CFE983C0055C94B /* UIViewController+fakeNaviBar.m */,
+			);
+			name = fakeNavibar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,9 +293,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDD076941CFE9AD30055C94B /* secondVC.m in Sources */,
 				CDD0765E1CFE8ADA0055C94B /* ViewController.m in Sources */,
+				CDD0768E1CFE8EFE0055C94B /* fakeNaviBar.m in Sources */,
 				CDD0765B1CFE8ADA0055C94B /* AppDelegate.m in Sources */,
 				CDD076581CFE8ADA0055C94B /* main.m in Sources */,
+				CDD076911CFE983C0055C94B /* UIViewController+fakeNaviBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -496,6 +522,7 @@
 				CDD076821CFE8ADA0055C94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDD076831CFE8ADA0055C94B /* Build configuration list for PBXNativeTarget "fakeNaviBarTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +531,7 @@
 				CDD076851CFE8ADA0055C94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CDD076861CFE8ADA0055C94B /* Build configuration list for PBXNativeTarget "fakeNaviBarUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +540,7 @@
 				CDD076881CFE8ADA0055C94B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
