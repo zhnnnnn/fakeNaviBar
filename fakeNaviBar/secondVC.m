@@ -32,8 +32,8 @@
     if (scrollView.contentOffset.y < 200 && scrollView.contentOffset.y > 0) {
         CGFloat scale = 1 - scrollView.contentOffset.y / 200;
         
-        [self zhn_setNavibarTransLationY: - 65 * (1-scale)];
-//        [self zhn_setNavibarAlpha:scale];
+//        [self zhn_setNavibarTransLationY: - 65 * (1-scale)];
+        [self zhn_setNavibarAlpha:scale];
     }
 }
 
